@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<!-- Reset css -->
+		<link rel="stylesheet" href="./assets/css/reset.css" />
+
+		<!-- Favicon -->
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="./assets/favicon/apple-icon-57x57.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="./assets/favicon/apple-icon-60x60.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="./assets/favicon/apple-icon-72x72.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="./assets/favicon/apple-icon-76x76.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="./assets/favicon/apple-icon-114x114.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="./assets/favicon/apple-icon-120x120.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="./assets/favicon/apple-icon-144x144.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="./assets/favicon/apple-icon-152x152.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./assets/favicon/apple-icon-180x180.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="./assets/favicon/android-icon-192x192.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicon/favicon-32x32.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="./assets/favicon/favicon-96x96.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./assets/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="./assets/favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<!-- Embed fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+			rel="stylesheet" />
+
+		<!-- Grid system css -->
+		<link rel="stylesheet" href="./assets/css/grid.css" />
+
+		<!-- Responsive -->
+		<link rel="stylesheet" href="./assets/css/responsive.css" />
+
+		<!-- Styles css -->
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Header on tablet/PC -->
+		<header class="header fixed show-on-mobile">
+			<div class="container">
+				<div class="header__inner">
+					<a href="mailto:d.thien@live.com" class="header-info">
+						<div class="header-info__wrap">
+							<img
+								src="./assets/icons/header-img.svg"
+								class="header-info__img" />
+						</div>
+						<p class="header-info__email">d.thien@live.com</p>
+					</a>
+
+					<!-- Logo -->
+					<a href="#">
+						<img src="./assets/imgs/logo.png" alt="" class="logo" />
+					</a>
+
+					<!-- Navbar -->
+					<nav class="pc__nav">
+						<ul class="navbar-list">
+							<li class="navbar-item">
+								<a href="#project" class="navbar-item__link">Projects</a>
+							</li>
+							<li class="navbar-item">
+								<a href="#journey" class="navbar-item__link">Journey</a>
+							</li>
+							<li class="navbar-item">
+								<a href="#service" class="navbar-item__link">Service</a>
+							</li>
+							<li class="navbar-item">
+								<a href="#contact" class="navbar-item__link">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<!-- Header on mobile -->
+		<header class="mobile-header">
+			<div class="container">
+				<div class="mobile-header__inner">
+					<!-- Logo -->
+					<a href="#">
+						<img
+							src="./assets/icons/mobile-logo.png"
+							alt=""
+							class="mobile-header__logo" />
+					</a>
+
+					<div class="mobile-header__wrap">
+						<a href="mailto:d.thien@live.com">
+							<div class="mobile-header__mail-wrap">
+								<img
+									src="./assets/icons/header-img.svg"
+									class="mobile-header__mail-img" />
+							</div>
+						</a>
+						<input
+							hidden
+							type="checkbox"
+							name="menu-checkbox"
+							id="menu-checkbox"
+							class="mobile-header__menu-input" />
+						<label class="mobile-header__toggle-menu" for="menu-checkbox">
+							<img
+								src="./assets/icons/mobile-header-nav.png"
+								alt=""
+								class="mobile-header__img" />
+						</label>
+
+						<!-- Overlay -->
+						<label for="menu-checkbox" class="menu-overlay"></label>
+
+						<!-- Menu content -->
+						<nav class="menu-drawer">
+							<a href="mailto:d.thien@live.com">
+								<p class="header-info__email">d.thien@live.com</p>
+							</a>
+							<!-- Navigation -->
+							<ul class="mobile__nav-list"></ul>
+							<script>
+								const pcNavList = document.querySelector(".navbar-list");
+								const mobileNavList =
+									document.querySelector(".mobile__nav-list");
+								mobileNavList.innerHTML = pcNavList.innerHTML;
+							</script>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<!-- Hero -->
+			<section class="hero">
+				<div class="container">
+					<div class="row hero__inner">
+						<figure class="col-xl-6 col-lg-6 col-md-6 col-12 hero__media">
+							<img
+								src="./assets/imgs/hero-img.png"
+								alt="hero-image"
+								class="hero__img" />
+							<img
+								src="./assets/imgs/hero-decor-01.png"
+								alt=""
+								class="hero__media-decor" />
+						</figure>
+						<section class="col-xl-5 col-lg-6 col-md-6 col-12 hero__content">
+							<h2 class="section-heading hero__heading">
+								Creative Web
+								<pre>Developer</pre>
+							</h2>
+							<p class="section-desc hero__desc">
+								Passionate about building stunning, user-friendly websites.
+								Combining innovative design with robust functionality, I
+								transform ideas into seamless digital experiences. Let's create
+								something amazing together!
+							</p>
+
+							<!-- CTA action -->
+							<div class="hero-cta">
+								<a href="tel:0974759545" class="btn">Book a Call</a>
+								<a href="#!" class="hero-cta__link">My Works</a>
+							</div>
+
+							<!-- Socials -->
+							<div class="hero__follow">
+								<p class="hero__follow-label">Follow me on:</p>
+								<div class="hero__social-icon">
+									<a href="https://www.facebook.com/D.Thiens/" target="_blank">
+										<svg
+											class="hero__social-icon-img"
+											viewBox="0 0 36 36"
+											class="hero__social-icon-img"
+											style="color: #0866ff; flex-shrink: 0"
+											fill="currentColor"
+											height="40"
+											width="40">
+											<path
+												d="M20.181 35.87C29.094 34.791 36 27.202 36 18c0-9.941-8.059-18-18-18S0 8.059 0 18c0 8.442 5.811 15.526 13.652 17.471L14 34h5.5l.681 1.87Z"></path>
+											<path
+												style="color: #fff"
+												d="M13.651 35.471v-11.97H9.936V18h3.715v-2.37c0-6.127 2.772-8.964 8.784-8.964 1.138 0 3.103.223 3.91.446v4.983c-.425-.043-1.167-.065-2.081-.065-2.952 0-4.09 1.116-4.09 4.025V18h5.883l-1.008 5.5h-4.867v12.37a18.183 18.183 0 0 1-6.53-.399Z"></path>
+										</svg>
+									</a>
+									<a href="https://www.threads.net/@d.thiens" target="_blank">
+										<img
+											src="./assets/icons/thread.svg"
+											alt=""
+											class="hero__social-icon-img" />
+									</a>
+									<a href="https://www.instagram.com/d.thien" target="_blank">
+										<img
+											src="./assets/icons/instagram.svg"
+											alt=""
+											class="hero__social-icon-img" />
+									</a>
+									<a href="https://www.tiktok.com/@dthiens" target="_blank">
+										<img
+											src="./assets/icons/tiktok.svg"
+											alt=""
+											class="hero__social-icon-img" />
+									</a>
+									<a href="https://x.com/Thin30392994" target="_blank">
+										<img
+											src="./assets/icons/twitter.svg"
+											alt=""
+											class="hero__social-icon-img" />
+									</a>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+
+			<!-- Clients -->
+			<section class="client">
+				<div class="container">
+					<div class="row row-cols-xl-2 row-cols-lg-1 row-cols-md-1 row-cols-1">
+						<div class="col-xl-3 offset-xl-1 col-lg-12 col-md-12 col-12">
+							<h3 class="section-heading client__heading">
+								Meet my recent clients
+							</h3>
+						</div>
+						<div class="col-xl-8 col-lg-12 col-md-12 col-12">
+							<div class="client__list">
+								<a href="#!" class="client-item">
+									<div class="client-item__wrap">
+										<img
+											src="./assets/icons/client-icon-01.svg"
+											alt=""
+											class="client-item__img" />
+									</div>
+									<p class="client-item__brand">Google</p>
+								</a>
+								<a href="#!" class="client-item">
+									<div class="client-item__wrap">
+										<img
+											src="./assets/icons/client-icon-02.svg"
+											alt=""
+											class="client-item__img" />
+									</div>
+									<p class="client-item__brand">Warner Bros</p>
+								</a>
+								<a href="#!" class="client-item">
+									<div class="client-item__wrap">
+										<img
+											src="./assets/icons/client-icon-03.svg"
+											alt=""
+											class="client-item__img" />
+									</div>
+									<p class="client-item__brand">Mailchimp</p>
+								</a>
+								<a href="#!" class="client-item">
+									<div class="client-item__wrap">
+										<img
+											src="./assets/icons/client-icon-04.svg"
+											alt=""
+											class="client-item__img" />
+									</div>
+									<p class="client-item__brand">Adobe</p>
+								</a>
+								<a href="#!" class="client-item">
+									<div class="client-item__wrap">
+										<img
+											src="./assets/icons/client-icon-05.svg"
+											alt=""
+											class="client-item__img" />
+									</div>
+									<p class="client-item__brand">Upwork</p>
+								</a>
+								<a href="#!" class="client-item">
+									<div class="client-item__wrap">
+										<img
+											src="./assets/icons/client-icon-06.svg"
+											alt=""
+											class="client-item__img" />
+									</div>
+									<p class="client-item__brand">Creative Cloud</p>
+								</a>
+								<a href="#!" class="client-item">
+									<div class="client-item__wrap">
+										<img
+											src="./assets/icons/client-icon-07.svg"
+											alt=""
+											class="client-item__img" />
+									</div>
+									<p class="client-item__brand">Woocommerce</p>
+								</a>
+								<a href="#!" class="client-item">
+									<div class="client-item__wrap">
+										<img
+											src="./assets/icons/client-icon-08.svg"
+											alt=""
+											class="client-item__img" />
+									</div>
+									<p class="client-item__brand">Canva</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Service -->
+			<section class="service" id="service">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h3 class="section-heading service__heading">Specialties</h3>
+							<p class="section-desc service__desc">
+								Creating visually captivating, responsive web designs that
+								prioritize user experience. Expertise in HTML, CSS, JavaScript,
+								and modern frameworks to bring your ideas to life with precision
+								and creativity.
+							</p>
+						</div>
+					</div>
+					<div class="row service-list">
+						<!-- Service item 1 -->
+						<div class="col-xl-4 col-lg-4 col-md-4 col-12">
+							<article class="service-item" id="service-item-1">
+								<div class="service-item__wrap">
+									<img
+										src="./assets/icons/service-icon-01.png"
+										alt=""
+										class="service-item__img" />
+								</div>
+								<h4 class="section-heading service-item__heading">
+									Creative Innovation
+								</h4>
+								<p class="section-desc service-item__desc line-clamp line-3">
+									We apply creative thinking to develop breakthrough products
+									that meet market needs and exceed customer expectations.
+								</p>
+							</article>
+						</div>
+
+						<!-- Service item 2 -->
+						<div class="col-xl-4 col-lg-4 col-md-4 col-12">
+							<article class="service-item" id="service-item-2">
+								<div class="service-item__wrap">
+									<img
+										src="./assets/icons/service-icon-02.png"
+										alt=""
+										class="service-item__img" />
+								</div>
+								<h4 class="section-heading service-item__heading">
+									UI/UX Design
+								</h4>
+								<p class="section-desc service-item__desc line-clamp line-3">
+									Combines UX and UI to optimize user experience and ensure an
+									attractive, user-friendly interface
+								</p>
+							</article>
+						</div>
+
+						<!-- Service item 3 -->
+						<div class="col-xl-4 col-lg-4 col-md-4 col-12">
+							<article class="service-item" id="service-item-3">
+								<div class="service-item__wrap">
+									<img
+										src="./assets/icons/service-icon-03.png"
+										alt=""
+										class="service-item__img" />
+								</div>
+								<h4 class="section-heading service-item__heading">
+									Interactive design
+								</h4>
+								<p class="section-desc service-item__desc line-clamp line-3">
+									Interactive design focuses on meaningful communication between
+									users and digital products, creating intuitive interfaces for
+									efficient interaction.
+								</p>
+							</article>
+						</div>
+					</div>
+					<div class="row service__dots">
+						<div class="service__dot service__dot--active"></div>
+						<div class="service__dot"></div>
+						<div class="service__dot"></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Work -->
+			<section class="work" id="project">
+				<div class="container">
+					<div class="row row-cols-xl-2 row-cols-lg-2 row-cols-md-2 row-cols-1">
+						<h3
+							class="col-xl-6 col-lg-6 col-md-12 col-12 section-heading work__heading">
+							Take a look at
+							<pre>my recent projects</pre>
+						</h3>
+						<p
+							class="col-xl-6 col-lg-6 col-md-12 col-12 section-desc work__desc">
+							Discover my recent projects, showcasing innovative designs and
+							advanced web solutions.
+						</p>
+					</div>
+					<div class="row">
+						<div class="col-xl-12 col-lg-12 col-md-12 col-12">
+							<!-- Work list -->
+							<div class="work-list">
+								<!-- Work item 1 -->
+								<article class="work-item">
+									<picture>
+										<source
+											media="(max-width:767.98px)"
+											srcset="./assets/imgs/work-decor-mobile-01.png" />
+										<img
+											src="./assets/imgs/work-decor-01.png"
+											class="work-item__decor"
+											alt="" />
+									</picture>
+									<div class="work-item__content">
+										<a href="#!">
+											<h4 class="section-heading work-item__heading">
+												Besnik Website
+											</h4>
+										</a>
+										<p class="section-desc work-item__desc line-clamp line-3">
+											Get the best real estate deals first before they hit the
+											mass market! hot foreclosure deals with one simple search
+										</p>
+										<a href="https://dthiens.github.io/project-01" target="_blank" class="work-item__link">Case Study</a>
+									</div>
+									<div class="work-item__media">
+										<a href="#!">
+											<img
+												src="./assets/imgs/work-img-05.png"
+												alt=""
+												class="work-item__img" />
+										</a>
+									</div>
+								</article>
+
+								<!-- Work item 2 -->
+								<article class="work-item">
+									<picture>
+										<source
+											media="(max-width:767.98px)"
+											srcset="./assets/imgs/work-decor-mobile-01.png" />
+										<img
+											src="./assets/imgs/work-decor-01.png"
+											class="work-item__decor"
+											alt="" />
+									</picture>
+									<div class="work-item__content">
+										<a href="#!">
+											<h4 class="section-heading work-item__heading">
+												Banking App
+											</h4>
+										</a>
+										<p class="section-desc work-item__desc line-clamp line-3">
+											We bring together everything that’s required to build
+											websites and apps that accept payments and send payouts
+											globally. We are the best platform.
+										</p>
+										<a href="https://dthiens.github.io/project-07" target="_blank" class="work-item__link">Case Study</a>
+									</div>
+									<div class="work-item__media">
+										<a href="#!">
+											<img
+												src="./assets/imgs/work-img-06.png"
+												alt=""
+												class="work-item__img" />
+										</a>
+									</div>
+								</article>
+
+								<!-- Work item 3 -->
+								<article class="work-item">
+									<picture>
+										<source
+											media="(max-width:767.98px)"
+											srcset="./assets/imgs/work-decor-mobile-01.png" />
+										<img
+											src="./assets/imgs/work-decor-01.png"
+											class="work-item__decor"
+											alt="" />
+									</picture>
+									<div class="work-item__content">
+										<a href="#!">
+											<h4 class="section-heading work-item__heading">
+												Pets care Service
+											</h4>
+										</a>
+										<p class="section-desc work-item__desc line-clamp line-3">
+											Discover a wide variety of Pets care services to choose
+											from, including daycare, private walks, office duty and
+											spa.
+										</p>
+										<a href="https://dthiens.github.io/project-06" target="_blank" class="work-item__link">Case Study</a>
+									</div>
+									<div class="work-item__media">
+										<a href="#!">
+											<img
+												src="./assets/imgs/work-img-07.png"
+												alt=""
+												class="work-item__img" />
+										</a>
+									</div>
+								</article>
+
+								<!-- Work item 4 -->
+								<article class="work-item">
+									<picture>
+										<source
+											media="(max-width:767.98px)"
+											srcset="./assets/imgs/work-decor-mobile-01.png" />
+										<img
+											src="./assets/imgs/work-decor-01.png"
+											class="work-item__decor"
+											alt="" />
+									</picture>
+									<div class="work-item__content">
+										<a href="#!">
+											<h4 class="section-heading work-item__heading">
+												Modular Website
+											</h4>
+										</a>
+										<p class="section-desc work-item__desc line-clamp line-3">
+											A brilliant, modular agency template for startup’s build
+											yours toady.
+										</p>
+										<a href="https://dthiens.github.io/project-05" class="work-item__link">Case Study</a>
+									</div>
+									<div class="work-item__media">
+										<a href="#!">
+											<img
+												src="./assets/imgs/work-img-08.png"
+												alt=""
+												class="work-item__img" />
+										</a>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<button class="btn work__more-btn">All Projects</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- About -->
+			<section class="about" id="journey">
+				<div class="container">
+					<div class="row">
+						<div
+							class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
+							<div class="about__top">
+								<div class="about__greeting-wrap">
+									<p class="about__greeting-desc">Hey,,,,It’s Thien</p>
+									<img
+										src="./assets/icons/about-icon-01.svg"
+										alt=""
+										class="about__greeting-icon" />
+								</div>
+								<h3 class="section-heading about__top-heading">
+									Fontend Developer
+								</h3>
+								<p class="section-desc about__top-desc">
+									Frontend Developer crafting responsive and interactive
+									websites. Passionate about modern web technologies and
+									user-centric design
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div
+							class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12 col-12">
+							<div class="about__stats">
+								<div class="about__stats-list">
+									<div class="about__stats-item">
+										<strong class="about__stats-number">05+</strong>
+										<p class="about__stats-desc">Years Experience</p>
+									</div>
+									<div class="about__stats-item">
+										<strong class="about__stats-number">21+</strong>
+										<p class="about__stats-desc">Features & Awards</p>
+									</div>
+									<div class="about__stats-item">
+										<strong class="about__stats-number">97%</strong>
+										<p class="about__stats-desc">Clients Rating</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="about__video-wrap">
+								<video
+									src="./assets/video/Mobile banking web.mp4"
+									poster="./assets/imgs/about-01.png"
+									class="about__video"></video>
+								<button class="btn about__play">
+									<img
+										src="./assets/icons/about-play.svg"
+										alt=""
+										class="about__play-icon" />
+								</button>
+								<div class="about__intro">
+									<p class="section-desc about__intro-label">Intro Video</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Feedback -->
+			<section class="feedback">
+				<div class="container">
+					<div class="row row-cols-xl-1 row-cols-lg-1 row-cols-md-1 row-cols-1">
+						<div class="col-12">
+							<div class="feedback__inner">
+								<div class="feedback__top">
+									<h3 class="feedback__top-heading section-heading">
+										What people says
+									</h3>
+									<p class="feedback__top-desc section-desc">
+										“Client Testimonials Hear what our satisfied customers have
+										to say. Discover how our services have made a difference in
+										their success stories.”
+									</p>
+								</div>
+								<div class="feedback-list">
+									<!-- Feedback-item 1 -->
+									<div class="feedback-item">
+										<blockquote class="feedback-item__quote">
+											“Client Feedback Discover the positive impact we’ve made,
+											straight from those who’ve experienced our work. Their
+											stories highlight our commitment to excellence.”
+										</blockquote>
+										<div class="feedback-item__info">
+											<div class="feedback__info-wrap">
+												<img
+													src="./assets/imgs/feedback-img-01.png"
+													alt=""
+													class="feedback__info-img" />
+											</div>
+											<p class="feedback__info-name">David Johnson</p>
+										</div>
+										<p class="feedback-item__label">Web Solutions Architect</p>
+									</div>
+
+									<!-- Feedback-item 2 -->
+									<div class="feedback-item">
+										<blockquote class="feedback-item__quote">
+											Customer Feedback Discover the positive impact we’ve made,
+											as told directly by those who have experienced our work.
+											Their stories highlight our commitment to excellence.
+										</blockquote>
+										<div class="feedback-item__info">
+											<div class="feedback__info-wrap">
+												<img
+													src="./assets/imgs/feedback-img-02.png"
+													alt=""
+													class="feedback__info-img" />
+											</div>
+											<p class="feedback__info-name">Sophia Martinez</p>
+										</div>
+										<p class="feedback-item__label">
+											Digital Experience Developer
+										</p>
+									</div>
+
+									<!-- Feedback-item 3 -->
+									<div class="feedback-item">
+										<blockquote class="feedback-item__quote">
+											Explore a visual gallery of feedback, complete with quotes
+											and images from satisfied customers.
+										</blockquote>
+										<div class="feedback-item__info">
+											<div class="feedback__info-wrap">
+												<img
+													src="./assets/imgs/feedback-img-03.png"
+													alt=""
+													class="feedback__info-img" />
+											</div>
+											<p class="feedback__info-name">William Anderson</p>
+										</div>
+										<p class="feedback-item__label">UI/UX Developer</p>
+									</div>
+
+									<!-- Feedback-item 4 -->
+									<div class="feedback-item">
+										<blockquote class="feedback-item__quote">
+											“ Discover how our solutions have transformed businesses
+											and improved user experiences.”
+										</blockquote>
+										<div class="feedback-item__info">
+											<div class="feedback__info-wrap">
+												<img
+													src="./assets/imgs/feedback-img-04.png"
+													alt=""
+													class="feedback__info-img" />
+											</div>
+											<p class="feedback__info-name">Ava Thomas</p>
+										</div>
+										<p class="feedback-item__label">Innovative Web Developer</p>
+									</div>
+
+									<!-- Feedback-item 5 -->
+									<div class="feedback-item">
+										<blockquote class="feedback-item__quote">
+											“Hear from industry experts who endorse our work and share
+											their insights on our services.”
+										</blockquote>
+										<div class="feedback-item__info">
+											<div class="feedback__info-wrap">
+												<img
+													src="./assets/imgs/feedback-img-05.jpg"
+													alt=""
+													class="feedback__info-img" />
+											</div>
+											<p class="feedback__info-name">Emma Jackson</p>
+										</div>
+										<p class="feedback-item__label">
+											Web Development Specialist
+										</p>
+									</div>
+								</div>
+								<div class="feedback__dots">
+									<div class="feedback__dot feedback__dot--active"></div>
+									<div class="feedback__dot"></div>
+									<div class="feedback__dot"></div>
+									<div class="feedback__dot"></div>
+									<div class="feedback__dot"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Questions -->
+			<section class="question">
+				<div class="container">
+					<div class="row">
+						<h3 class="col question__top-heading section-heading">
+							A few questions clients normally ask me
+						</h3>
+					</div>
+					<div class="row row-cols-1">
+						<div class="col">
+							<!-- Question list -->
+							<div class="question-list">
+								<!-- Question item 1 -->
+								<label class="question-item">
+									<input
+										hidden
+										checked
+										type="checkbox"
+										name="checked"
+										id="item-01"
+										class="question-item__input" />
+									<div class="question-item__wrap">
+										<div class="question-item__body">
+											<h4 class="question-item__heading">
+												What is your hourly rate?
+											</h4>
+											<p class="question-item__desc section-desc">
+												Determining an hourly rate for services can be a complex
+												task that involves considering various factors such as
+												industry standards, level of expertise, and the nature
+												of the services provided. It’s essential to evaluate the
+												value you bring to your clients and ensure that the rate
+												is competitive yet fair. Reflect on the time, effort,
+												and resources you invest in delivering high-quality
+												results, and set a rate that reflects your
+												professionalism and dedication to excellence.
+											</p>
+										</div>
+										<label class="question-item__btn" for="item-01"> </label>
+									</div>
+								</label>
+
+								<!-- Question item 2 -->
+								<label class="question-item">
+									<input
+										hidden
+										type="checkbox"
+										name="checked"
+										id="item-02"
+										class="question-item__input" />
+									<div class="question-item__wrap">
+										<div class="question-item__body">
+											<h4 class="question-item__heading">
+												What type of projects do you take on?
+											</h4>
+											<p class="question-item__desc section-desc">
+												Our team handles a diverse range of projects, from
+												small-scale web development to large, complex software
+												solutions. We thrive on challenges that require
+												innovative thinking and a deep understanding of
+												technology. Whether it’s building a user-friendly
+												website, developing a mobile application, or creating a
+												robust backend system, we approach each project with a
+												commitment to quality and client satisfaction.
+											</p>
+										</div>
+										<label class="question-item__btn" for="item-02"> </label>
+									</div>
+								</label>
+
+								<!-- Question item 3 -->
+								<label class="question-item">
+									<input
+										hidden
+										type="checkbox"
+										name="checked"
+										id="item-03"
+										class="question-item__input" />
+									<div class="question-item__wrap">
+										<div class="question-item__body">
+											<h4 class="question-item__heading">
+												How do you charge for projects ?
+											</h4>
+											<p class="question-item__desc section-desc">
+												Our pricing strategy is project-based, considering
+												complexity, duration, and specific client needs. We
+												ensure transparency and value for our clients.
+											</p>
+										</div>
+										<label class="question-item__btn" for="item-03"> </label>
+									</div>
+								</label>
+
+								<!-- Question item 4 -->
+								<label class="question-item">
+									<input
+										hidden
+										type="checkbox"
+										name="checked"
+										id="item-04"
+										class="question-item__input" />
+									<div class="question-item__wrap">
+										<div class="question-item__body">
+											<h4 class="question-item__heading">
+												What time-zone do you work in?
+											</h4>
+											<p class="question-item__desc section-desc">
+												Our team operates across multiple time zones, ensuring
+												global coverage and flexibility to accommodate clients’
+												schedules. We prioritize effective communication and
+												timely delivery regardless of geographical boundaries.
+											</p>
+										</div>
+										<label class="question-item__btn" for="item-04"> </label>
+									</div>
+								</label>
+
+								<!-- Question item 5 -->
+								<label class="question-item">
+									<input
+										hidden
+										type="checkbox"
+										name="checked"
+										id="item-05"
+										class="question-item__input" />
+									<div class="question-item__wrap">
+										<div class="question-item__body">
+											<h4 class="question-item__heading">
+												How often can we communicate?
+											</h4>
+											<p class="question-item__desc section-desc">
+												Our communication frequency is adaptable to project
+												needs, ensuring regular updates and availability for
+												discussions to align with client preferences and project
+												milestones.
+											</p>
+										</div>
+										<label class="question-item__btn" for="item-05"> </label>
+									</div>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact -->
+			<section class="contact">
+				<div class="container">
+					<div class="row row-cols-1">
+						<div class="col">
+							<div class="contact__top">
+								<h3 class="contact__heading section-heading">My atmosphere</h3>
+								<p class="contact__desc section-desc">
+									“Welcome to My Atmosphere: a space where creativity breathes
+									and ideas flourish. Join me in exploring the art of
+									possibility.”
+								</p>
+								<a href="mailto:d.thien@live.com" class="contact__email">
+									d.thien@live.com
+								</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="row row-cols-xl-3 row-cols-lg-3 row-cols-md-3 row-cols-1 contact__gallery">
+						<img
+							src="./assets/imgs/contact-img-01.png"
+							alt=""
+							class="contact__gallery-img" />
+						<img
+							src="./assets/imgs/contact-img-02.png"
+							alt=""
+							class="contact__gallery-img" />
+						<img
+							src="./assets/imgs/contact-img-03.png"
+							alt=""
+							class="contact__gallery-img" />
+						<img
+							src="./assets/imgs/contact-img-04.png"
+							alt=""
+							class="contact__gallery-img" />
+						<img
+							src="./assets/imgs/contact-img-05.png"
+							alt=""
+							class="contact__gallery-img" />
+					</div>
+					<div class="contact__dots">
+						<div class="contact__dot contact__dot--active"></div>
+						<div class="contact__dot"></div>
+						<div class="contact__dot"></div>
+						<div class="contact__dot"></div>
+						<div class="contact__dot"></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<section class="cta" id="contact">
+				<div class="container">
+					<div class="row row-cols-1">
+						<div class="col cta__wrap">
+							<div class="cta__content">
+								<img
+									src="./assets/imgs/cta-img-01.png"
+									alt=""
+									class="cta__img" />
+								<h3 class="cta__heading section-heading">
+									Got a project? Let’s talk
+								</h3>
+								<p class="cta__desc section-desc">
+									“Crafting Digital Experiences: Innovative web solutions
+									tailored to your business needs. Let’s build something great
+									together.”
+								</p>
+								<a href="tel:0974759545" class="btn cta__btn">
+									<pre>Book a Call</pre>
+								</a>
+							</div>
+							<img
+								src="./assets/imgs/cta-decor-01.png"
+								alt=""
+								class="cta__decor-left" />
+							<picture>
+								<source
+									media="(max-width:767.98px)"
+									srcset="./assets/imgs/cta-decor-mobile-02.png" />
+								<img
+									src="./assets/imgs/cta-decor-02.png"
+									class="cta__decor-center"
+									alt="" />
+							</picture>
+							<img
+								src="./assets/imgs/cta-decor-03.png"
+								alt=""
+								class="cta__decor-right" />
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="footer__inner">
+							<a href="mailto:d.thien@live.com" class="footer-info">
+								<div class="footer-info__wrap">
+									<img
+										src="./assets/icons/header-img.svg"
+										class="footer-info__img" />
+								</div>
+								<p class="header-info__email">d.thien@live.com</p>
+							</a>
+
+							<!-- Logo -->
+							<a href="#">
+								<img src="./assets/imgs/logo.png" alt="" class="logo" />
+							</a>
+
+							<!-- Navbar -->
+							<nav class="footer__nav">
+								<ul class="navbar-list">
+									<li class="navbar-item">
+										<a href="#project" class="navbar-item__link">Projects</a>
+									</li>
+									<li class="navbar-item">
+										<a href="#journey" class="navbar-item__link">Journey</a>
+									</li>
+									<li class="navbar-item">
+										<a href="#service" class="navbar-item__link">Service</a>
+									</li>
+									<li class="navbar-item">
+										<a href="#contact" class="navbar-item__link">Contact</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="row footer__bottom">
+					<div class="col-12">
+						<div class="footer__bottom-wrap">
+							<div class="footer__bottom-left">
+								<p class="footer-copyright section-desc">
+									© D.Thien 2024. All rights reserved.
+								</p>
+							</div>
+							<div class="footer__bottom-right">
+								<p class="section-desc footer__text-1">Privacy Policy</p>
+								<p class="section-desc footer__text-2">Terms of Conditions</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Script -->
+		<script src="./assets/js/slider.js"></script>
+	</body>
+</html>
