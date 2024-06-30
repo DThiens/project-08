@@ -143,10 +143,10 @@ const video = document.querySelector(".about__video");
 const introBtn = document.querySelector(".about__intro");
 if (video && playBtn) {
 	video.addEventListener("pause", () => {
-		video.controls = false
-		playBtn.style.visibility = "visible";
-		playBtn.style.opacity = "1";
-		playBtn.style.transition = "0.5s ease";
+		// video.controls = false
+		// playBtn.style.visibility = "visible";
+		// playBtn.style.opacity = "1";
+		// playBtn.style.transition = "0.5s ease";
 		introBtn.style.visibility = "visible";
 		introBtn.style.opacity = "1";
 		introBtn.style.transition = "0.5s ease";
@@ -163,6 +163,7 @@ if (video && playBtn) {
 	});
 
 	video.addEventListener("ended", () => {
+		video.controls = false
 		video.load();
 		playBtn.style.visibility = "visible";
 		playBtn.style.opacity = "1";

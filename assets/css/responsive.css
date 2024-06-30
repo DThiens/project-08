@@ -559,10 +559,10 @@
 	}
 
 	.feedback::before {
-		content: url("/assets/imgs/feedback-decor-mobile-01.png") !important;
+		content: url("./assets/imgs/feedback-decor-mobile-01.png") !important;
 	}
 	.feedback::after {
-		content: url("/assets/imgs/feedback-decor-mobile-02.png") !important;
+		content: url("./assets/imgs/feedback-decor-mobile-02.png") !important;
 		position: absolute;
 	}
 
