@@ -616,13 +616,13 @@ a {
 }
 
 .feedback::before {
-	content: url("/assets/imgs/feedback-decor-01.png");
+	content: url("./assets/imgs/feedback-decor-01.png");
 	position: absolute;
 	bottom: 0;
 	left: 0;
 }
 .feedback::after {
-	content: url("/assets/imgs/feedback-decor-02.png");
+	content: url("./assets/imgs/feedback-decor-02.png");
 	position: absolute;
 	bottom: 0;
 	right: 0;
