@@ -89,7 +89,7 @@ function autoChangeSlideFeedback() {
 	feedbackDotList[nextFeedbackDotIndex].dispatchEvent(new Event("touchstart"));
 }
 
-timingCounter = setInterval(autoChangeSlideFeedback, 2000);
+timingCounter = setInterval(autoChangeSlideFeedback, 9000);
 
 // Contact Slider
 const contactDotList = document.querySelectorAll(".contact__dot");
@@ -143,48 +143,44 @@ const video = document.querySelector(".about__video");
 const introBtn = document.querySelector(".about__intro");
 if (video && playBtn) {
 	video.addEventListener("pause", () => {
-		// video.controls = false
-		// playBtn.style.visibility = "visible";
-		// playBtn.style.opacity = "1";
-		// playBtn.style.transition = "0.5s ease";
+		playBtn.style.visibility = "visible";
+		playBtn.style.opacity = "1";
+		playBtn.style.transition = "0.5s ease";
 		introBtn.style.visibility = "visible";
 		introBtn.style.opacity = "1";
 		introBtn.style.transition = "0.5s ease";
+		video.controls = false;
 	});
 
 	video.addEventListener("play", () => {
-		video.controls = true
 		playBtn.style.visibility = "hidden";
 		playBtn.style.opacity = "0";
 		playBtn.style.transition = "0.5s ease";
 		introBtn.style.visibility = "hidden";
 		introBtn.style.opacity = "0";
 		introBtn.style.transition = "0.5s ease";
+		video.controls = true;
 	});
 
 	video.addEventListener("ended", () => {
-		video.controls = false
 		video.load();
+		video.controls = false;
 		playBtn.style.visibility = "visible";
 		playBtn.style.opacity = "1";
 		playBtn.style.transition = "0.5s ease";
 	});
 
-	playBtn.addEventListener("touchend", () => {
+	playBtn.addEventListener("touchmove", () => {
 		if (video.paused) {
 			video.play();
+			video.controls = false;
 		} else {
 			video.pause();
+			video.controls = true;
 		}
 	});
+
 	playBtn.addEventListener("mousedown", () => {
-		if (video.paused) {
-			video.play();
-		} else {
-			video.pause();
-		}
-	});
-	video.addEventListener("touchend", () => {
 		if (video.paused) {
 			video.play();
 		} else {

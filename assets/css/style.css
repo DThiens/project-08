@@ -245,6 +245,7 @@ a {
 	display: flex;
 	align-items: center;
 	column-gap: 20px;
+
 }
 
 .hero__social-icon-img {
@@ -252,6 +253,13 @@ a {
 	width: 40px;
     height: 40px;
 	border-radius: 10px;
+	transition: 0.3s ease-in-out;
+	opacity: 0.7;
+}
+
+.hero__social-icon-img:hover {
+	transform: scale(1.5);
+	opacity: 1;
 }
 
 /* Clients */
@@ -352,6 +360,16 @@ a {
 	margin-top: 60px;
 }
 
+.service-item{
+	transition: 0.3s ease-in-out;
+}
+
+.service-item:hover {
+	transform: scale(1.3);
+	cursor: pointer;
+	box-shadow: -1px 31px 74px -16px rgba(0,0,0,0.75);
+}
+
 .service-item__wrap {
 	display: flex;
 	align-items: center;
@@ -437,6 +455,12 @@ a {
 	justify-content: space-between;
 	background: #fbfaff;
 	position: relative;
+	transition: 0.2s ease;
+}
+
+.work-item:hover {
+	transform: scale(1.1);
+	box-shadow: 1px -1px 51px 7px rgba(0,0,0,0.75);
 }
 
 .work-item__content {
@@ -497,6 +521,8 @@ a {
 /* About */
 .about {
 	margin-top: 140px;
+	position: relative;
+	z-index: 1;
 }
 
 .about__greeting-wrap {
@@ -875,6 +901,12 @@ a {
 .contact__gallery-img {
 	width: 100%;
 	object-fit: cover;
+	transition: 0.2s ease-in-out;
+}
+
+.contact__gallery-img:hover {
+	transform: translateY(-50px);
+	box-shadow: -3px 76px 20px -49px rgba(0,0,0,0.75);
 }
 
 .cta {

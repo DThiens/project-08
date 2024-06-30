@@ -12,6 +12,12 @@
 	}
 
 	.work .work__desc {
+		width: auto !important;
+	}
+	.work .work-item__content {
+		width: 50% !important;
+	}
+	.work .work-item__img {
 		width: 100% !important;
 	}
 
@@ -122,6 +128,13 @@
 	.about .about__stats-item {
 		padding: 0 !important;
 		text-align: center;
+	}
+	.hero__heading,.hero-cta {
+		margin: 0 auto !important;
+	}
+	
+	.hero__desc {
+		margin: 20px auto !important;
 	}
 
 	.about .about__top-desc,

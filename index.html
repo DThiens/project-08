@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="Permissions-Policy" content="run-ad-auction=(self)">
 		<title>Portfolio</title>
 		<!-- Reset css -->
 		<link rel="stylesheet" href="./assets/css/reset.css" />
@@ -87,6 +86,17 @@
 		<!-- Responsive -->
 		<link rel="stylesheet" href="./assets/css/responsive.css" />
 
+		<!-- Animation AOS CSS -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+		<!-- Animation AOS JS -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+		<!-- Animation Animate CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 		<!-- Styles css -->
 		<link rel="stylesheet" href="./assets/css/style.css" />
 	</head>
@@ -129,6 +139,7 @@
 				</div>
 			</div>
 		</header>
+
 		<!-- Header on mobile -->
 		<header class="mobile-header">
 			<div class="container">
@@ -183,12 +194,16 @@
 				</div>
 			</div>
 		</header>
+
 		<main>
 			<!-- Hero -->
 			<section class="hero">
 				<div class="container">
 					<div class="row hero__inner">
-						<figure class="col-xl-6 col-lg-6 col-md-6 col-12 hero__media">
+						<figure
+							class="col-xl-6 col-lg-6 col-md-6 col-12 hero__media"
+							data-aos="fade-up"
+							data-aos-duration="1500">
 							<img
 								src="./assets/imgs/hero-img.png"
 								alt="hero-image"
@@ -198,21 +213,27 @@
 								alt=""
 								class="hero__media-decor" />
 						</figure>
-						<section class="col-xl-5 col-lg-6 col-md-6 col-12 hero__content">
-							<h2 class="section-heading hero__heading">
-								Creative Web
+						<section
+							class="col-xl-5 col-lg-6 col-md-6 col-12 hero__content"
+							data-aos="fade-down"
+							data-aos-duration="1500">
+							<h2
+								class="section-heading hero__heading animate__animated animate__tada animate__slower 2s animate__infinite">
+								A Creative
 								<pre>Developer</pre>
 							</h2>
 							<p class="section-desc hero__desc">
-								Passionate about building stunning, user-friendly websites.
-								Combining innovative design with robust functionality, I
-								transform ideas into seamless digital experiences. Let's create
-								something amazing together!
+								I bring value to web development projects by merging technical
+								expertise with creativity and aesthetics.
 							</p>
 
 							<!-- CTA action -->
 							<div class="hero-cta">
-								<a href="tel:0974759545" class="btn">Book a Call</a>
+								<a
+									href="tel:0974759545"
+									class="btn animate__animated animate__heartBeat animate__infinite"
+									>Book a Call</a
+								>
 								<a href="#!" class="hero-cta__link">My Works</a>
 							</div>
 
@@ -268,7 +289,7 @@
 			</section>
 
 			<!-- Clients -->
-			<section class="client">
+			<section class="client" data-aos="fade-up">
 				<div class="container">
 					<div class="row row-cols-xl-2 row-cols-lg-1 row-cols-md-1 row-cols-1">
 						<div class="col-xl-3 offset-xl-1 col-lg-12 col-md-12 col-12">
@@ -359,7 +380,7 @@
 			<!-- Service -->
 			<section class="service" id="service">
 				<div class="container">
-					<div class="row">
+					<div class="row" data-aos="fade-up">
 						<div class="col-12">
 							<h3 class="section-heading service__heading">Specialties</h3>
 							<p class="section-desc service__desc">
@@ -370,7 +391,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="row service-list">
+					<div class="row service-list" data-aos="fade-up">
 						<!-- Service item 1 -->
 						<div class="col-xl-4 col-lg-4 col-md-4 col-12">
 							<article class="service-item" id="service-item-1">
@@ -440,7 +461,9 @@
 			<!-- Work -->
 			<section class="work" id="project">
 				<div class="container">
-					<div class="row row-cols-xl-2 row-cols-lg-2 row-cols-md-2 row-cols-1">
+					<div
+						class="row row-cols-xl-2 row-cols-lg-2 row-cols-md-2 row-cols-1"
+						data-aos="fade-up">
 						<h3
 							class="col-xl-6 col-lg-6 col-md-12 col-12 section-heading work__heading">
 							Take a look at
@@ -453,7 +476,9 @@
 						</p>
 					</div>
 					<div class="row">
-						<div class="col-xl-12 col-lg-12 col-md-12 col-12">
+						<div
+							class="col-xl-12 col-lg-12 col-md-12 col-12"
+							data-aos="fade-down">
 							<!-- Work list -->
 							<div class="work-list">
 								<!-- Work item 1 -->
@@ -618,13 +643,14 @@
 			</section>
 
 			<!-- About -->
-			<section class="about" id="journey">
+			<section class="about" data-aos="zoom-in" id="journey">
 				<div class="container">
 					<div class="row">
 						<div
 							class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
 							<div class="about__top">
-								<div class="about__greeting-wrap">
+								<div
+									class="about__greeting-wrap animate__animated animate__shakeY animate__slower 2s animate__infinite">
 									<p class="about__greeting-desc">Hey,,,,It’s Thien</p>
 									<img
 										src="./assets/icons/about-icon-01.svg"
@@ -663,7 +689,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row" data-aos="zoom-in-up">
 						<div class="col">
 							<div class="about__video-wrap">
 								<video
@@ -686,7 +712,10 @@
 			</section>
 
 			<!-- Feedback -->
-			<section class="feedback">
+			<section
+				class="feedback"
+				data-aos="fade-up"
+				data-aos-anchor-placement="center-bottom">
 				<div class="container">
 					<div class="row row-cols-xl-1 row-cols-lg-1 row-cols-md-1 row-cols-1">
 						<div class="col-12">
@@ -701,13 +730,17 @@
 										their success stories.”
 									</p>
 								</div>
-								<div class="feedback-list">
+								<div
+									class="feedback-list"
+									data-aos="flip-left"
+									data-aos-easing="ease-out-cubic"
+									data-aos-duration="1000">
 									<!-- Feedback-item 1 -->
 									<div class="feedback-item">
 										<blockquote class="feedback-item__quote">
-											“Client Feedback Discover the positive impact we’ve made,
-											straight from those who’ve experienced our work. Their
-											stories highlight our commitment to excellence.”
+											“Thien takes the development process to another level. He
+											is inspiring and always available to support the team with
+											his positive attitude.”
 										</blockquote>
 										<div class="feedback-item__info">
 											<div class="feedback__info-wrap">
@@ -718,15 +751,17 @@
 											</div>
 											<p class="feedback__info-name">David Johnson</p>
 										</div>
-										<p class="feedback-item__label">Web Solutions Architect</p>
+										<p class="feedback-item__label">
+											Independent Creative Director
+										</p>
 									</div>
 
 									<!-- Feedback-item 2 -->
 									<div class="feedback-item">
 										<blockquote class="feedback-item__quote">
-											Customer Feedback Discover the positive impact we’ve made,
-											as told directly by those who have experienced our work.
-											Their stories highlight our commitment to excellence.
+											I've been working with Thien for several years now on
+											countless projects and I can honestly say that he blows my
+											mind every single time!
 										</blockquote>
 										<div class="feedback-item__info">
 											<div class="feedback__info-wrap">
@@ -738,15 +773,15 @@
 											<p class="feedback__info-name">Sophia Martinez</p>
 										</div>
 										<p class="feedback-item__label">
-											Digital Experience Developer
+											Freelance Digital Designer & Founder @ Vool™
 										</p>
 									</div>
 
 									<!-- Feedback-item 3 -->
 									<div class="feedback-item">
 										<blockquote class="feedback-item__quote">
-											Explore a visual gallery of feedback, complete with quotes
-											and images from satisfied customers.
+											Thien is an experienced professional, curious and always
+											looking for new ideas and inspirations.
 										</blockquote>
 										<div class="feedback-item__info">
 											<div class="feedback__info-wrap">
@@ -763,8 +798,9 @@
 									<!-- Feedback-item 4 -->
 									<div class="feedback-item">
 										<blockquote class="feedback-item__quote">
-											“ Discover how our solutions have transformed businesses
-											and improved user experiences.”
+											His capabilities go way beyond the look of things as he's
+											great at delivering state-of-the-art technical solutions
+											that rely on the latest technologies.
 										</blockquote>
 										<div class="feedback-item__info">
 											<div class="feedback__info-wrap">
@@ -775,14 +811,16 @@
 											</div>
 											<p class="feedback__info-name">Ava Thomas</p>
 										</div>
-										<p class="feedback-item__label">Innovative Web Developer</p>
+										<p class="feedback-item__label">Web Developer</p>
 									</div>
 
 									<!-- Feedback-item 5 -->
 									<div class="feedback-item">
 										<blockquote class="feedback-item__quote">
-											“Hear from industry experts who endorse our work and share
-											their insights on our services.”
+											“As a designer it's an absolute pleasure working with him
+											as he's constantly delivering accurate implementations
+											which avoids a lot of unnecessary back and forth between
+											design and development.”
 										</blockquote>
 										<div class="feedback-item__info">
 											<div class="feedback__info-wrap">
@@ -794,7 +832,7 @@
 											<p class="feedback__info-name">Emma Jackson</p>
 										</div>
 										<p class="feedback-item__label">
-											Web Development Specialist
+											Independent Product Designer
 										</p>
 									</div>
 								</div>
@@ -812,9 +850,9 @@
 			</section>
 
 			<!-- Questions -->
-			<section class="question">
+			<section class="question" data-aos="fade-up">
 				<div class="container">
-					<div class="row">
+					<div class="row" data-aos="flip-up">
 						<h3 class="col question__top-heading section-heading">
 							A few questions clients normally ask me
 						</h3>
@@ -824,7 +862,7 @@
 							<!-- Question list -->
 							<div class="question-list">
 								<!-- Question item 1 -->
-								<label class="question-item">
+								<label class="question-item" data-aos="zoom-in-up">
 									<input
 										hidden
 										checked
@@ -854,7 +892,7 @@
 								</label>
 
 								<!-- Question item 2 -->
-								<label class="question-item">
+								<label class="question-item" data-aos="zoom-in-up">
 									<input
 										hidden
 										type="checkbox"
@@ -882,7 +920,7 @@
 								</label>
 
 								<!-- Question item 3 -->
-								<label class="question-item">
+								<label class="question-item" data-aos="zoom-in-up">
 									<input
 										hidden
 										type="checkbox"
@@ -905,7 +943,7 @@
 								</label>
 
 								<!-- Question item 4 -->
-								<label class="question-item">
+								<label class="question-item" data-aos="zoom-in-up">
 									<input
 										hidden
 										type="checkbox"
@@ -929,7 +967,7 @@
 								</label>
 
 								<!-- Question item 5 -->
-								<label class="question-item">
+								<label class="question-item" data-aos="zoom-in-up">
 									<input
 										hidden
 										type="checkbox"
@@ -958,9 +996,12 @@
 			</section>
 
 			<!-- Contact -->
-			<section class="contact">
+			<section class="contact" data-aos="fade-up">
 				<div class="container">
-					<div class="row row-cols-1">
+					<div
+						class="row row-cols-1"
+						data-aos="fade-up"
+						data-aos-duration="1000">
 						<div class="col">
 							<div class="contact__top">
 								<h3 class="contact__heading section-heading">My atmosphere</h3>
@@ -976,9 +1017,11 @@
 						</div>
 					</div>
 					<div
+						data-aos="fade-down"
+						data-aos-easing="linear"
 						class="row row-cols-xl-3 row-cols-lg-3 row-cols-md-3 row-cols-1 contact__gallery">
 						<img
-							src="./assets/imgs/contact-img-01.png"
+							src="./assets/imgs/contact-img-06.png"
 							alt=""
 							class="contact__gallery-img" />
 						<img
@@ -1009,7 +1052,7 @@
 			</section>
 
 			<!-- CTA -->
-			<section class="cta" id="contact">
+			<section class="cta" id="contact" data-aos="fade-up">
 				<div class="container">
 					<div class="row row-cols-1">
 						<div class="col cta__wrap">
@@ -1018,7 +1061,8 @@
 									src="./assets/imgs/cta-img-01.png"
 									alt=""
 									class="cta__img" />
-								<h3 class="cta__heading section-heading">
+								<h3
+									class="cta__heading section-heading animate__animated animate__pulse animate__infinite infinite">
 									Got a project? Let’s talk
 								</h3>
 								<p class="cta__desc section-desc">
@@ -1026,7 +1070,9 @@
 									tailored to your business needs. Let’s build something great
 									together.”
 								</p>
-								<a href="tel:0974759545" class="btn cta__btn">
+								<a
+									href="tel:0974759545"
+									class="btn cta__btn animate__animated animate__heartBeat animate__infinite">
 									<pre>Book a Call</pre>
 								</a>
 							</div>
@@ -1054,7 +1100,7 @@
 		</main>
 
 		<!-- Footer -->
-		<footer class="footer">
+		<footer class="footer" data-aos="fade-up">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -1102,8 +1148,8 @@
 								</p>
 							</div>
 							<div class="footer__bottom-right">
-								<p class="section-desc footer__text-1">Privacy Policy</p>
-								<p class="section-desc footer__text-2">Terms of Conditions</p>
+								<a href="#!"><p class="section-desc footer__text-1">Privacy Policy</p></a>
+								<a href="#!"><p class="section-desc footer__text-2">Terms of Conditions</p></a>
 							</div>
 						</div>
 					</div>
@@ -1113,5 +1159,8 @@
 
 		<!-- Script -->
 		<script src="./assets/js/slider.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>
