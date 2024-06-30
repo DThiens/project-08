@@ -826,7 +826,7 @@ a {
 }
 
 .question-item__btn::before {
-	content: url("/assets/icons/question-icon-01.png");
+	content: url("./assets/icons/question-icon-01.png");
 	width: 14px;
 	height: 14px;
 }
@@ -838,7 +838,7 @@ a {
 .question-item__input:checked
 	+ .question-item__wrap
 	.question-item__btn::before {
-	content: url("/assets/icons/question-icon-02.svg");
+	content: url("./assets/icons/question-icon-02.svg");
 }
 
 /* Contact */
