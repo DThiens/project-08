@@ -193,7 +193,7 @@ a {
 }
 
 .hero__inner::before {
-	content: url("./../imgs/hero-decor-02.png");
+	content: url("././../imgs/hero-decor-02.png");
 	position: absolute;
 	bottom: -5px;
 	right: -227px;
