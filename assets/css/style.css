@@ -253,7 +253,7 @@ a {
 	width: 40px;
     height: 40px;
 	border-radius: 10px;
-	transition: 0.3s ease-in-out;
+	transition: 0.2s ease-in-out;
 }
 
 .hero__social-icon-img:hover {
@@ -366,7 +366,7 @@ a {
 .service-item:hover {
 	transform: scale(1.3);
 	cursor: pointer;
-	box-shadow: -1px 31px 74px -16px rgba(0,0,0,0.75);
+	box-shadow: 1px 21px 35px -25px rgba(0,0,0,0.75);
 }
 
 .service-item__wrap {
