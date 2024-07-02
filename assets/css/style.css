@@ -894,24 +894,20 @@ a {
 }
 
 .contact__gallery {
-	padding-top: 70px;
+	margin-top: 20px;
 	flex-wrap: nowrap;
 	overflow: hidden;
-}
-
-.contact__gallery-wrap {
-	overflow: hidden;
+	padding: 40px 0;
 }
 
 .contact__gallery-img {
 	width: 100%;
-	height: 100%;
 	object-fit: cover;
 	transition: 0.3s;
 }
 
 .contact__gallery-img:hover {
-	transform: scale(1.3);
+	transform: scale(1.2);
 }
 
 .cta {
