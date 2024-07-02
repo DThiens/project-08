@@ -354,11 +354,11 @@
 	}
 
 	.work__more-btn {
-		max-width: 154px !important;
+		min-width: 154px !important;
 	}
 
 	.btn {
-		max-width: 147px;
+		min-width: 147px;
 		height: 55px !important;
 		padding: 12px 31px !important;
 		font-size: 1.6rem !important;
@@ -919,11 +919,6 @@
 	.work .work__desc {
 		padding-left: 28px;
 		width: 370px;
-	}
-
-	.work__more-btn {
-		max-width: 154px !important;
-		margin: 0 auto;
 	}
 
 	.question .question-item__wrap {
